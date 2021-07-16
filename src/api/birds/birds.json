@@ -1,0 +1,14 @@
+[
+  {
+    "birdId": 1,
+    "birdName": "eagle",     
+    "description": "Big Bird",
+     "imageUrl": "./assets/images/sociable-weaver.png"
+  },
+  {
+    "birdId": 2,
+    "birdName": "robin",     
+    "description": "small bird",
+     "imageUrl": "./assets/images/sociable-weaver.png"
+  }
+]
