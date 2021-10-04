@@ -6,12 +6,13 @@
       <div class='row'>
         <div class='col-md-2'>Filter by:</div>
         <div class='col-md-4'>
-          <input type='text'/>
-        </div>
+          <input type='text'
+          [(ngModel)]='listFilter' />
+         </div>
       </div>
       <div class='row'>
         <div class='col-md-6'>
-          <h4>Filtered by: </h4>
+          <h4>Filtered by: {{listFilter}}</h4>
         </div>
       </div>
       <div class='table-responsive'>
@@ -33,15 +34,16 @@
             <tr *ngFor='let bird of filteredBirds'>
               <td>
                 <img *ngIf='showImage'
-                     [src]='bird.imageUrl'
-                     [title]='bird.birdName'
+                     [src]='bird.url'
+                     [title]='bird.name'
                      [style.width.px]='imageWidth'
                      [style.margin.px]='imageMargin'>
               </td>
               <td>
-                <a [routerLink]="['/birds', bird.birdId]">
-                  {{ bird.birdName }}
+                <a [routerLink]="['/birds', bird.Id]">
+                  {{ bird.name }}
                 </a>
+                <!-- {{ bird.name }} -->
               </td>              
               <td>
                 {{ bird.description }}

@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { BirdModule } from './birds/bird.module';
 import { WelcomeComponent } from './home/welcome.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

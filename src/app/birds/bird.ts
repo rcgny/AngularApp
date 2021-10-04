@@ -1,6 +1,6 @@
 export interface IBird{
-    birdId: number;
-    birdName: string; 
+    Id: number;
+    name: string; 
     description: string;    
-    imageUrl: string;
+    url: string;
   }

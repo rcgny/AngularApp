@@ -1,14 +1,20 @@
 [
   {
     "birdId": 1,
-    "birdName": "eagle",     
-    "description": "Big Bird",
-     "imageUrl": "./assets/images/sociable-weaver.png"
+    "birdName": "Great-Tailed Grackle",     
+    "description": "Big black bird with iridescent purple sheen",
+     "imageUrl": "./assets/images/great-tailed-grackle.png"
   },
   {
     "birdId": 2,
-    "birdName": "robin",     
-    "description": "small bird",
-     "imageUrl": "./assets/images/sociable-weaver.png"
+    "birdName": "California Quail",     
+    "description": "Fat gray bird, that is a ground dweller",
+     "imageUrl": "./assets/images/california-quail.png"
+  },
+  {
+    "birdId": 1,
+    "birdName": "Annas Humming Bird",     
+    "description": "Bright green body with dark head",
+     "imageUrl": "./assets/images/annas-hummingbird.png"
   }
 ]

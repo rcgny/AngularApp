@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { BirdListComponent } from './bird-list.component';
 import { BirdDetailComponent } from './bird-detail.component';
 import { AppRoutingModule } from '../app-routing.module';
-
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -14,6 +14,7 @@ import { AppRoutingModule } from '../app-routing.module';
   imports: [
     CommonModule,
     AppRoutingModule,
+    FormsModule
   ]
 })
 export class BirdModule { }

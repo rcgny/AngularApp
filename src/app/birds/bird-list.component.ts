@@ -9,6 +9,7 @@ import {BirdService } from './bird.service';
   styleUrls: ['./bird-list.component.css']
 })
 export class BirdListComponent implements OnInit, OnDestroy {
+  // public
   pageTitle: string = 'Bird List';
   showImage: boolean = false;
   imageWidth: number = 50;
@@ -16,25 +17,28 @@ export class BirdListComponent implements OnInit, OnDestroy {
   errorMessage: string = '';
   sub!: Subscription;
 
-  birds: IBird[] = [];
-  filteredBirds: IBird[] = [];
-
   private _listFilter: string = '';
+
+  // get, set  listFilter() called in the bird-list.component.html which uses listFilter
   get listFilter(): string {
     return this._listFilter;
   }
+  
   set listFilter(value: string) {
     this._listFilter = value;
     console.log('In setter:', value);
     this.filteredBirds = this.performFilter(value);
   }
 
+  filteredBirds: IBird[] = [];
+  birds: IBird[] = [];  
+
   constructor(private birdService: BirdService) { }
 
   performFilter(filterBy: string): IBird[] {
     filterBy = filterBy.toLocaleLowerCase();
     return this.birds.filter((bird: IBird) =>
-      bird.birdName.toLocaleLowerCase().includes(filterBy));
+      bird.name.toLocaleLowerCase().includes(filterBy));
   }
 
   toggleImage(): void {
